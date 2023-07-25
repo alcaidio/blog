@@ -1,29 +1,29 @@
 {
-	"posts": [
-		{
-			"title": "name1", 
-			"path": "assets/posts/name1.md",
-			"date": 1690314346
-		},
-        {
-			"title": "name2", 
-			"path": "assets/posts/name2.md",
-			"date": 1690314346
-		},
-        {
-			"title": "name3", 
-			"path": "assets/posts/name3.md",
-			"date": 1690314346
-		},
-        {
-			"title": "name4", 
-			"path": "assets/posts/name4.md",
-			"date": 1690314346
-		},
-        {
-			"title": "name5", 
-			"path": "assets/posts/name5.md",
-			"date": 1690314346
-		}
-	]
+  "posts": [
+    {
+      "title": "name1",
+      "slug": "name-1",
+      "resume": "lorem ipsum sim amet sim  dolor a la bon heure mon doudou"
+    },
+    {
+      "title": "name2",
+      "slug": "name-2",
+      "resume": "lorem ipsum sim amet sim  dolor a la bon heure mon doudou"
+    },
+    {
+      "title": "name3",
+      "slug": "name-3",
+      "resume": "lorem ipsum sim amet sim  dolor a la bon heure mon doudou"
+    },
+    {
+      "title": "name4",
+      "slug": "name-4",
+      "resume": "lorem ipsum sim amet sim  dolor a la bon heure mon doudou"
+    },
+    {
+      "title": "name5",
+      "slug": "name-5",
+      "resume": "lorem ipsum sim amet sim  dolor a la bon heure mon doudou"
+    }
+  ]
 }
