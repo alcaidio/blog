@@ -8,6 +8,7 @@ import { RouterOutlet } from "@angular/router";
   imports: [RouterOutlet],
   template: `
     <router-outlet></router-outlet>
+    <footer class="font-light text-xs max-w-xl py-12">Copyright 2023 - Timothy Alcaide</footer>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })

@@ -13,9 +13,7 @@ import { DomSanitizer } from "@angular/platform-browser";
 @Component({
   standalone: true,
   imports: [CommonModule],
-  template: `<section class="p-3 sm:p-5">
-    <article [innerHTML]="content$ | async" class="prose"></article>
-  </section>`,
+  template: `<main [innerHTML]="content$ | async" class="prose"></main>`,
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

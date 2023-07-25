@@ -4,8 +4,8 @@ import {
   Input
 } from "@angular/core";
 import { NgIf } from "@angular/common";
-import { Post } from "../services/post.service";
 import { RouterLink } from "@angular/router";
+import { Post } from "src/app/services/post.service";
 
 @Component({
   selector: "app-post",

@@ -1,1 +1,14 @@
-<app-post *ngFor="let post of posts$ | async; trackBy: trackBySlug" [post]="post" class="m-2"/>
+<app-intro />
+
+<main>
+  <h1
+    class="mt-10 mb-2 p-2 pl-0 text-primary-color text-2xl font-bold font-playfair max-w-max"
+  >
+    ✍🏼 Blog Posts
+  </h1>
+
+  <app-post
+    *ngFor="let post of posts$ | async; trackBy: trackBySlug"
+    [post]="post"
+  />
+</main>
