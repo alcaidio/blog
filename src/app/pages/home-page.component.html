@@ -1,14 +1,49 @@
-<app-intro />
+<div class="xl:flex w-screen h-screen max-w-xl xl:max-w-none mx-auto">
+  <header class="xl:w-1/3 mt-16 xl:mt-4 xl:px-10 xl:py-8 p-3">
+    <app-intro />
+  </header>
+  <div class="xl:flex-1 xl:overflow-y-scroll mt-10 xl:mt-14">
+    <div class="flex">
+      <main class="max-w-xl">
+        <div class="sticky top-0 w-full z-10">
+          <h1
+            class="pr-3 pl-3 pt-3 bg-slate-50 dark:bg-slate-900 text-xl md:text-2xl font-bold select-none"
+          >
+            ✍🏻 Blog posts
+          </h1>
 
-<main>
-  <h1
-    class="mb-3 text-2xl md:mb-4 md:text-3xl font-bold select-none"
-  >
-    ✍🏼 Blog posts
-  </h1>
+          <div
+            class="h-10 bg-gradient-to-b from-slate-50 dark:from-slate-900 to-transparent"
+          ></div>
+        </div>
 
-  <app-post
-    *ngFor="let post of posts$ | async; trackBy: trackBySlug"
-    [post]="post"
-  />
-</main>
+        <div class="-mt-4 px-2">
+          <app-post
+            *ngFor="let post of posts$ | async; trackBy: trackBySlug"
+            [post]="post"
+          />
+          <app-post
+            *ngFor="let post of posts$ | async; trackBy: trackBySlug"
+            [post]="post"
+          />
+          <app-post
+            *ngFor="let post of posts$ | async; trackBy: trackBySlug"
+            [post]="post"
+          />
+          <app-post
+            *ngFor="let post of posts$ | async; trackBy: trackBySlug"
+            [post]="post"
+          />
+        </div>
+        <div
+          class="sticky bottom-0 w-full z-10 h-16 bg-gradient-to-t from-slate-50 dark:from-slate-900 to-transparent"
+        ></div>
+      </main>
+
+      <!-- TODO add filters and button for smartphone -->
+      <!-- <aside class="hidden xl:block flex-1">
+        <div class="sticky top-0">filters</div>
+      </aside> -->
+    </div>
+  </div>
+</div>

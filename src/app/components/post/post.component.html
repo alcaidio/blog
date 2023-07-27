@@ -1,11 +1,11 @@
 <a
   *ngIf="post"
   [routerLink]="'blog/' + post.slug"
-  class="block mb-3 p-4 rounded-md transition-all cursor-pointer hover:translate-x-1  bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 focus:outline-slate-800 dark:focus:outline-slate-100"
+  class="block mb-3 p-4 rounded-md transition-all cursor-pointer hover:lg:translate-x-1  bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 focus:outline-slate-800 dark:focus:outline-slate-100"
 >
   <article>
-    <h4 class="text-lg md:text-xl font-medium first-letter:uppercase truncate ...">
-      {{ post.title }}
+    <h4 class="text-base md:text-lg font-medium first-letter:uppercase line-clamp-2 sm:line-clamp-1">
+      {{ post.title }} Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quod magni fugiat obcaecati suscipit eveniet cumque soluta dolorem illo asperiores! Corporis veritatis eos consequuntur, dolorum atque ipsa blanditiis ex fugiat?
     </h4>
     <div class="mt-1 md:mt-2 flex items-center gap-x-3">
       <div class="flex items-center gap-x-1">
