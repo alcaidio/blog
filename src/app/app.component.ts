@@ -8,7 +8,7 @@ import { RouterOutlet } from "@angular/router";
   imports: [RouterOutlet],
   template: `
     <router-outlet></router-outlet>
-    <footer class="font-light text-xs max-w-xl py-12">Copyright 2023 - Timothy Alcaide</footer>
+    <footer class="font-light text-xs py-12 select-none">Copyright 2023 - <a href="https://twitter.com/alcaidio">Timothy Alcaide</a></footer>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })

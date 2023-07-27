@@ -1,16 +1,16 @@
 <a
   *ngIf="post"
   [routerLink]="'blog/' + post.slug"
-  class="mb-3 p-4 rounded-sm transition-all cursor-pointer block border border-transparent hover:border-cyan-500"
+  class="block mb-3 p-4 rounded-md transition-all cursor-pointer hover:translate-x-1  bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 focus:outline-slate-800 dark:focus:outline-slate-100"
 >
   <article>
-    <h4 class="text-lg md:text-xl font-medium first-letter:uppercase">
+    <h4 class="text-lg md:text-xl font-medium first-letter:uppercase truncate ...">
       {{ post.title }}
     </h4>
-    <div class="flex gap-x-8 mt-1">
-      <div class="flex items-center gap-x-2">
+    <div class="mt-1 md:mt-2 flex items-center gap-x-3">
+      <div class="flex items-center gap-x-1">
         <svg
-          class="w-[20px] text-text-color"
+          class="w-[16px] md:w-[20px]"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -24,12 +24,12 @@
             d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
           ></path>
         </svg>
-        <p class="font-light text-sm text-text-color">Feb, 2023</p>
+        <p class="font-light text-xs md:text-sm">Feb, 2023</p>
       </div>
 
-      <div class="flex gap-x-2 items-center">
+      <div class="flex items-center gap-x-1">
         <svg
-          class="w-[20px] text-text-color"
+          class="w-[16px] md:w-[20px]"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -43,7 +43,7 @@
             d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
           ></path>
         </svg>
-        <p class="font-light text-sm text-text-color">5 mins read</p>
+        <p class="font-light text-xs md:text-sm">5 mins read</p>
       </div>
     </div>
   </article>
