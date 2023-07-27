@@ -1,3 +1,5 @@
+# Titre de l'article 
+
 Depuis Angular [v16.1.0](https://github.com/angular/angular/releases/tag/16.1.0), il existe une alternative facile à l’utilisation de setter et getter pour transformer les inputs. 
 
 Le décorateur @Input inclut désormais une option de transformation qui accepte une fonction permettant de transformer l'input avant de l'affecter à l'instance du composant (ou directive).

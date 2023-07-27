@@ -6,8 +6,6 @@ import { ContactComponent } from '../contact/contact.component';
   standalone: true,
   imports: [ContactComponent],
   templateUrl: './intro.component.html',
-  styles: [
-  ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IntroComponent {}

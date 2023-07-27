@@ -1,8 +1,8 @@
 import { Routes } from "@angular/router";
-import { HomePageComponent } from "./pages/home-page.component";
-import { PostDetailPageComponent } from "./pages/post-detail-page.component";
+import { PostDetailPageComponent } from "./pages/post-detail/post-detail-page.component";
 import { postDetailsResolver } from "./services/post-details.resolver";
 import { NotFoundPageComponent } from "./pages/not-found-page.component";
+import { HomePageComponent } from "./pages/home/home-page.component";
 
 export const ROUTES = {
     404: "not-found"

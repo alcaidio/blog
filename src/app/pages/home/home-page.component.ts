@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, inject } from "@angular/core";
 import { AsyncPipe, NgFor } from "@angular/common";
-import { Post, PostService } from "../services/post.service";
-import { PostComponent } from "../components/post/post.component";
-import { IntroComponent } from "../components/intro/intro.component";
+import { PostComponent } from "src/app/components/post/post.component";
+import { IntroComponent } from "src/app/components/intro/intro.component";
+import { Post, PostService } from "src/app/services/post.service";
 
 @Component({
   standalone: true,
